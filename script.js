@@ -1,25 +1,22 @@
-function getNumbers() {
-    let num1 = parseFloat(document.getElementById("num1").value);
-    let num2 = parseFloat(document.getElementById("num2").value);
-    return [num1, num2];
+let display = document.getElementById("display");
+
+function append(value){
+    display.value += value;
 }
 
-function add() {
-    let [num1, num2] = getNumbers();
-    document.getElementById("result").innerText = "Result: " + (num1 + num2);
+function clearDisplay(){
+    display.value = "";
 }
 
-function subtract() {
-    let [num1, num2] = getNumbers();
-    document.getElementById("result").innerText = "Result: " + (num1 - num2);
+function deleteLast(){
+    display.value = display.value.slice(0,-1);
 }
 
-function multiply() {
-    let [num1, num2] = getNumbers();
-    document.getElementById("result").innerText = "Result: " + (num1 * num2);
-}
-
-function divide() {
-    let [num1, num2] = getNumbers();
-    document.getElementById("result").innerText = "Result: " + (num1 / num2);
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch{
+        display.value = "Error";
+    }
 }
