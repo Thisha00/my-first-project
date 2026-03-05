@@ -1,12 +1,15 @@
-# 🧮 Simple Calculator Web App
+# 🧮Professional Calculator Web App
 
-A basic calculator built using HTML, CSS, and JavaScript.
+A modern calculator built using HTML, CSS, and JavaScript.
 
 ## 🚀 Features
 - Addition
 - Subtraction
 - Multiplication
 - Division
+- Percentage
+- Delete button
+- Clear button
 - Simple and clean UI
 
 ## 🛠️ Technologies Used
